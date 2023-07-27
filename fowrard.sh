@@ -2,7 +2,7 @@
 # the target host 192.168.0.100 is running a service on port 8888
 # and you want that service available on the localhost port 7777
 
-ssh -L 7777:localhost:8888 user@192.168.0.100
+ssh  user@192.168.0.100
 
 # remote port forwarding
 # you are running a service on localhost port 9999 
@@ -18,3 +18,7 @@ ssh -C2qTnN -D 12001 user@target.host
 
 credits: https://gist.github.com/billautomata/ee0572113e1496a75b03
 
+## SSH-Shenanigans:
+Type `~C` after pressing enter 2 times to enter the ssh prompt
+Use the above local or remote forward commands to continue.
+EG: `-L 7777:localhost:8888` in the ssh prompt
